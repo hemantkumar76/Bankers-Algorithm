@@ -104,6 +104,22 @@ bool safe_hai_ya_nhi(int hmm[])
 
 int main()
 {
+    input_lega();
+
+    int hmm[max_resources];
+    for (int i = 0; i < number_resources; i++)
+    {
+        hmm[i] = available[i];
+    }
+
+    if (safe_hai_ya_nhi(hmm))
+    {
+        printf("safe hai \n");
+    }
+    else
+    {
+        printf("unsafe hai \n");
+    }
 
     return 0;
 }
